@@ -5,7 +5,7 @@ import { DefaultButton } from './components/Buttons'
 function App() {
   return (
     <div style={{padding:'2rem'}}>
-      <BasicTitle>Styled Component</BasicTitle>
+      <BasicTitle special>Styled Component</BasicTitle>
       <DefaultButton>Click Me</DefaultButton>
     </div>
   );
