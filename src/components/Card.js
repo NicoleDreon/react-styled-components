@@ -29,11 +29,16 @@ footer {
   padding: 0 2rem;
   h4{
   text-transform: capitalize;
+  &::before{
+    content: 'Name : ';
+    color: grey;
+  }
   }
   p{
     color: var(--primary);
     font-weight: 700;
   }
+}
 }
 transition: all 1.5s ease-in-out;
 &:hover {
