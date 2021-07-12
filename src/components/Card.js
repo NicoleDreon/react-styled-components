@@ -35,6 +35,11 @@ footer {
     font-weight: 700;
   }
 }
+transition: all 1.5s ease-in-out;
+&:hover {
+  box-shadow: 0 3px 3px #222;
+  cursor: pointer;
+}
 @media (min-width:768px){
   max-width: 600px;
 }
