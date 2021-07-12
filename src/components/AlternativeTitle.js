@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import {colors} from '../utils'
+import {colors, setupBorder} from '../utils'
 
 const ComplexTitle = ({title, className}) => {
   return (
     <div className={className}>
       <h1>{title}</h1>
       <div className="underline"></div>
+      <div className="box"></div>
     </div>
   )
 }
@@ -16,11 +17,15 @@ const Wrapper = styled(ComplexTitle)`
     text-transform: capitalize;
     text-align: center;
   }
-  div{
+  .underline{
     width: 5rem;
     height: .25rem;
     background: ${colors.primary};
     margin: 0 auto;
+  }
+  .box {
+    height: 10px;
+    border: ${setupBorder({width:5, type:'solid', color:'green'})};
   }
 `
 

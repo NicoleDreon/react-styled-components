@@ -6,6 +6,7 @@ const ComplexTitle = ({title}) => {
     <Wrapper>
       <h1>{title}</h1>
       <div className="underline"></div>
+      <div className="box"></div>
     </Wrapper>
   )
 }
@@ -15,11 +16,15 @@ const Wrapper = styled.div`
     text-transform: capitalize;
     text-align: center;
   }
-  div{
+  .underline{
     width: 5rem;
     height: .25rem;
     background: var(--primary);
     margin: 0 auto;
+  }
+  .box {
+    height: 10px;
+    border: var(--mainBorder);
   }
 `
 
