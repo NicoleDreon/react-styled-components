@@ -9,6 +9,13 @@ border:none;
 color:white;
 padding:.25rem;
 cursor:pointer;
+${({type})=>{
+  return type === 'submit' && css`
+  display:block;
+  width:100%;
+  margin-top:1rem;
+  border-radius:.25rem`
+}}
 `
 
 const Form = () => {
