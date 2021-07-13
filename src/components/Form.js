@@ -18,6 +18,20 @@ ${({type})=>{
 }}
 `
 
+const BasicInput = styled.input.attrs((props)=>{
+  return{
+    type: props.type || 'text',
+    placeholder: props.placeholder || 'please enter value'
+  }
+})`
+box-sizing:border-border-box;
+padding:.3rem;
+border:2px solid #f2f4f8;
+border-radius:.25rem;
+width:100%;
+margin-top:1rem;
+`
+
 const Form = () => {
   return (
     <div>
@@ -29,7 +43,10 @@ const Form = () => {
         padding:2rem;
         margin-top:1rem;`}>
         <h2>Form</h2>
-        <input type='text'></input>
+        <BasicInput type='text'></BasicInput>
+        <BasicInput type='text'></BasicInput>
+        <BasicInput type='text'></BasicInput>
+        <BasicInput type='text'></BasicInput>
         <Button type='submit' >submit</Button>
       </form>
     </div>
